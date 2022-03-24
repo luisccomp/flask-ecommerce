@@ -9,3 +9,8 @@ if environ.get('FLASK_ENV'):
 
 class Settings:
     SECRET_KEY = environ.get('SECRET_KEY') or 'SECRET'
+    
+    # Base application configuration settings
+    APPS = [
+        'ecommerce.pages'
+    ]
